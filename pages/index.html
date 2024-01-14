@@ -36,7 +36,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 primary_color">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navigation_color">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"
                 >Dispatcher</a
@@ -46,17 +46,19 @@
               <a class="nav-link" href="#">Google Lab</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">POS System</a>
+              <a class="nav-link" href="#">POS System</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Calender</a>
+              <a class="nav-link" href="#">Calender</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Widget</a>
+              <a class="nav-link" href="#">Widget</a>
             </li>
           </ul>
           <!-- ***************notification********* -->
-          <div class="d-flex align-items-center primary_color notification_area">
+          <div
+            class="d-flex align-items-center navigation_color notification_area"
+          >
             <div class="search-container">
               <!-- Search Icon -->
               <div class="search-icon" onclick="toggleSearch()">
@@ -70,9 +72,9 @@
                 id="searchBar"
               />
             </div>
-            <i class="far fa-comment-dots"></i>
+            <i class="far fa-comment-dots px-3"></i>
             <i class="fas fa-cog"></i>
-            <i class="far fa-lightbulb"></i>
+            <i class="far fa-lightbulb px-3"></i>
             <i class="fas fa-bell"></i>
           </div>
           <!-- ******************Profile************** -->
@@ -85,7 +87,76 @@
     </nav>
 
     <!-- other content goes here -->
-
+    <div class="content_area">
+      <!-- **************information_section******************* -->
+      <div class="information_section">
+        <!-- ---location & price---- -->
+        <div class="location_price">
+          <!-- --location -->
+          <div class="location">
+            <h4>Location</h4>
+            <div class="d-flex align-items-center">
+              <p class="m-0">Origin</p>
+              <img
+                class="mx-2"
+                src="../assets/title-dividar.png"
+                style="width: 200px; height: 10px"
+                alt=""
+                srcset=""
+              />
+              <p class="m-0">Destination</p>
+            </div>
+            <form class="information_form">
+              <div class="address_input">
+                <input type="text" name="" id="" placeholder="" />
+                <select id="dropdown" class="mx-2">
+                  <option value="" disabled selected>State</option>
+                  <option value="option1">Option 1</option>
+                  <option value="option2">Option 2</option>
+                </select>
+                <input type="text" name="" id="" class="me-2"/>
+                <select id="dropdown">
+                  <option value="" disabled selected>State</option>
+                  <option value="option1">Option 1</option>
+                  <option value="option2">Option 2</option>
+                </select>
+              </div>
+            </form>
+            <!-- mile -->
+            <div class="d-flex">
+              <div style="width: 25%; margin-right:20%;">
+                <div class="d-flex justify-content-between">
+                  <p>0 mile</p>
+                  <p>500 mile</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div style="width:30%;height:1px; background:#4FFF11;"></div>
+                  <div style="background-color:#4FFF11; border:2px solid white;border-radius:50px;font-size: 12px;padding: 5px;">125</div>
+                  <div style="width:80%;height:1px; background:rgba(0, 0, 0, 0.204);"></div>
+                </div>
+              </div>
+              <div div style="width: 25%;">
+                <div class="d-flex justify-content-between">
+                  <p>0 mile</p>
+                  <p>500 mile</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div style="width:30%;height:1px; background:#4FFF11;"></div>
+                  <div style="background-color:#4FFF11; border:2px solid white;border-radius:50px;font-size: 12px;padding: 5px;">125</div>
+                  <div style="width:80%;height:1px; background:rgba(0, 0, 0, 0.204);"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- price -->
+          <div class="price">
+            <h4>price</h4>
+          </div>
+        </div>
+        <!--  -->
+        <div></div>
+      </div>
+    </div>
 
     <script src="../script/index.js"></script>
     <script
