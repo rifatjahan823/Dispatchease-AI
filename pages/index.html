@@ -87,7 +87,7 @@
     </nav>
 
     <!-- other content goes here -->
-    <div class="content_area">
+    <div class="container-fluid">
       <!-- **************information_section******************* -->
       <div class="information_section">
         <!-- ---location & price---- -->
@@ -114,7 +114,7 @@
                   <option value="option1">Option 1</option>
                   <option value="option2">Option 2</option>
                 </select>
-                <input type="text" name="" id="" class="me-2"/>
+                <input type="text" name="" id="" class="me-2" />
                 <select id="dropdown">
                   <option value="" disabled selected>State</option>
                   <option value="option1">Option 1</option>
@@ -124,39 +124,494 @@
             </form>
             <!-- mile -->
             <div class="d-flex">
-              <div style="width: 25%; margin-right:20%;">
+              <div style="width: 25%; margin-right: 20%">
                 <div class="d-flex justify-content-between">
                   <p>0 mile</p>
                   <p>500 mile</p>
                 </div>
                 <div class="d-flex align-items-center">
-                  <div style="width:30%;height:1px; background:#4FFF11;"></div>
-                  <div style="background-color:#4FFF11; border:2px solid white;border-radius:50px;font-size: 12px;padding: 5px;">125</div>
-                  <div style="width:80%;height:1px; background:rgba(0, 0, 0, 0.204);"></div>
+                  <div
+                    style="width: 30%; height: 1px; background: #4fff11"
+                  ></div>
+                  <div
+                    style="
+                      background-color: #4fff11;
+                      border: 2px solid white;
+                      border-radius: 50px;
+                      font-size: 12px;
+                      padding: 5px;
+                    "
+                  >
+                    125
+                  </div>
+                  <div
+                    style="
+                      width: 80%;
+                      height: 1px;
+                      background: rgba(0, 0, 0, 0.204);
+                    "
+                  ></div>
                 </div>
               </div>
-              <div div style="width: 25%;">
+              <div div style="width: 25%">
                 <div class="d-flex justify-content-between">
                   <p>0 mile</p>
                   <p>500 mile</p>
                 </div>
                 <div class="d-flex align-items-center">
-                  <div style="width:30%;height:1px; background:#4FFF11;"></div>
-                  <div style="background-color:#4FFF11; border:2px solid white;border-radius:50px;font-size: 12px;padding: 5px;">125</div>
-                  <div style="width:80%;height:1px; background:rgba(0, 0, 0, 0.204);"></div>
+                  <div
+                    style="width: 30%; height: 1px; background: #4fff11"
+                  ></div>
+                  <div
+                    style="
+                      background-color: #4fff11;
+                      border: 2px solid white;
+                      border-radius: 50px;
+                      font-size: 12px;
+                      padding: 5px;
+                    "
+                  >
+                    125
+                  </div>
+                  <div
+                    style="
+                      width: 80%;
+                      height: 1px;
+                      background: rgba(0, 0, 0, 0.204);
+                    "
+                  ></div>
                 </div>
               </div>
             </div>
+            <!-- check -->
+            <div class="d-flex  mt-3">
+              <div class="form-check me-5">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Reverse Route
+                </label>
+              </div>
+              <p class="ms-3">Listings</p>
+            </div>
+            <!-- -------------- -->
+            <div class="d-flex align-items-center">
+              <div class="form-check form-switch me-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexSwitchCheckChecked"> Show along route</div>
+              <p>Posted within</p>
+              <button type="button" class="btn btn-dark rounded-4 ms-4">All (Default)</button>
+              <button type="button" class="btn btn-secondary rounded-4 mx-2">Option 1</button>
+              <button type="button" class="btn btn-secondary rounded-4">Option 2</button>
+            </div>
+           <!-- ---------- -->
+          <div class="d-flex vehicle_input mt-5">
+            <div class="me-5">
+              <label for="">Vehicle Status</label>
+              <select id="dropdown" >
+                <option value="" disabled selected>All Default</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+              </select>
+            </div>
+              <div class="ms-1">
+               <label for="">Min % of Vehicles</label>
+                <select id="dropdown">
+                <option value="" disabled selected>1</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+              </select>
+            </div>
+            </div>
           </div>
-          <!-- price -->
+          <!-- ***********pricing*********** -->
           <div class="price">
             <h4>price</h4>
+            <!-- --- -->
+            <div class="">
+             <label for="">Payment type</label>
+              <select id="dropdown">
+              <option value="" disabled selected>All (Default)</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+            </select>
+          </div>
+            <!-- --- -->
+            <div class="my-2">
+              <label for="">Min total pay</label>
+          <div class="input-group">
+          <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+          <span class="input-group-text">$</span>
+        </div>
+            </div>
+            <!-- --- -->
+            <label for="">Min rate vehicle per mile</label>
+            <div class="input-group">
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+            <span class="input-group-text">$</span>
+          </div>
+            <!-- --- -->
+            <div class="d-flex my-2">
+              <div class="form-check form-switch me-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckChecked"
+                  checked
+                /> <label class="form-check-label" for="flexSwitchCheckChecked"> CDL</div>
+
+                  <label class="form-check-label me-2" for="flexSwitchCheckChecked">Non CDL</label>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+        
+                  </div>
+            </div>
+            <div class="mt-4">
+              <p>Min % of Vehicles</p>
+              <select id="dropdown">
+              <option value="" disabled selected>1</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+            </select>
+          </div>
           </div>
         </div>
-        <!--  -->
-        <div></div>
+
+        <!-- ***********data-information *********** -->
+        <div class="data_info_area">
+          <div class="data_info_area_top">
+            <!-- ------- -->
+            <div class="data_info_area_content">
+              <div class="d-flex">
+                <img src="../assets/data-info-1.png" alt="" srcset="" >
+                <p>Total Load in Database</p>
+              </div>
+              <h2>7772</h2>
+              <p class="text-dark">Today, 11:25 AM</p>
+            </div>
+              <!-- ------- -->
+              <div class="data_info_area_content">
+                <div class="d-flex">
+                  <img src="../assets/data-info-1.png" alt="" srcset="" >
+                  <p>Total Load in Database</p>
+                </div>
+                <h2>7772</h2>
+                <p class="text-dark">Today, 11:25 AM</p>
+              </div>
+               <!-- ------- -->
+               <div class="data_info_area_content">
+                <div class="d-flex">
+                  <img src="../assets/data-info-1.png" alt="" srcset="" >
+                  <p>Total Load in Database</p>
+                </div>
+                <h2>7772</h2>
+                <p class="text-dark">Today, 11:25 AM</p>
+              </div>
+          </div>
+          <div class="data_info_area_bottom">
+            <!-- ------- -->
+            <div class="data_info_area_content">
+              <div class="d-flex">
+                <img src="../assets/data-info-1.png" alt="" srcset="" >
+                <p>Total Load in Database</p>
+              </div>
+              <h2>7772</h2>
+              <p class="text-dark">Today, 11:25 AM</p>
+            </div>
+              <!-- ------- -->
+              <div class="data_info_area_content">
+                <div class="d-flex">
+                  <img src="../assets/data-info-1.png" alt="" srcset="" >
+                  <p>Total Load in Database</p>
+                </div>
+                <h2>7772</h2>
+                <p class="text-dark">Today, 11:25 AM</p>
+              </div>
+               <!-- ------- -->
+               <div class="data_info_area_content">
+                <div class="d-flex">
+                  <img src="../assets/data-info-1.png" alt="" srcset="" >
+                  <p>Total Load in Database</p>
+                </div>
+                <h2>7772</h2>
+                <p class="text-dark">Today, 11:25 AM</p>
+              </div>
+          </div>
+        </div>
       </div>
+        <!-- ******************Content Section with Accordion**************** -->
+    <div class="accordion mt-5" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header"type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <div class="according_header">
+            <div class="accprding_header_left">
+              <h2>Trip 1</h2>
+              <p>Fast, Accurate & profitable</p>
+            </div>
+            <div class="accprding_header_right">
+              <div><h2>Data 1</h2><p>Sub text</p></div>
+              <div><h2>Data 2</h2><p>Sub text</p></div>
+              <div><h2>Data 3</h2><p>Sub text</p></div>
+            </div>
+          </div>
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="row">
+              <div class="col">
+               <div class="d-flex accordion_body_title">
+                <div><h1>c1</h1></div>
+                <div>
+                  <img src="../assets/title-dividar.png" alt="" srcset="">
+                <div class="d-flex">
+                  <div class="me-4">
+                    <h2>Phoenix, AZ,85001</h2>
+                    <p>(Phoenix-Mesa-Glendale)</p>
+                    <button>Origin</button>
+                  </div>
+                  <div>
+                    <h2>Phoenix, AZ,85001</h2>
+                    <p>(Phoenix-Mesa-Glendale)</p>
+                    <button>Origin</button>
+                  </div>
+                </div>
+                </div>
+               </div>
+               <!-- ------content---- -->
+               <div class="accordion_body_content d-flex justify-content-between align-items-end">
+                <div><img src="../assets/audi-r8 1.png" alt=""></div>
+                <dv>
+                  <h2>Audi R8 2018</h2>
+                  <h3>$700 Certified Funds</h3>
+                  <h4>382mi @ $1.83/mi</h4>
+                  <div class="d-flex">
+                    <img src="../assets/accordion-1.png" alt="" srcset="">
+                    <p>Weight</p>
+                  </div>
+                  <h5>3856 lbs</h5>
+                </dv>
+                <div>
+                  <div class="d-flex">
+                    <img src="../assets/accordion-2.png" alt="" srcset="">
+                    <p>Dimensions</p>
+                  </div>
+                  <h5>185” L x 80” W x 49” H</h5>
+                </div>
+               </div>
+               <!-- ------------bottom---------------- -->
+               <div class="accordion_body_bottom">
+                  <div class="row">
+                    <div class="col">
+                      <p>Company</p>
+                      <a href="#">Xpress Auto Transport Inc</a>
+                      <div class="d-flex my-2 align-items-center">
+                        <i class="fas fa-star black_start"></i>
+                        <p>0% (0)</p>
+                        <div style="width:2.5px;height: 10px; background-color: #57565696;margin: 0 8px;"> </div>
+                        <p>4.7/5</p>
+                        <i class="fas fa-star gold-star"></i>
+                        <p>(234)</p>
+                      </div>
+                      <h6>M-S 9-7 Sun 9-3 EST</h6>
+                    </div>
+                    <div class="col">
+                     <div class="d-flex justify-content-between">
+                      <di>
+                        <p>Order ID</p>
+                      <h6>30439364-xt</h6>
+                      </di>
+                      <div class="d-flex">
+                        <i class="fas fa-phone-alt"></i>
+                        <p style="color: #0C6EFE; font-size: 12px;">929-566-5040</p>
+                      </div>
+                     </div>
+                     <textarea placeholder="Additional Info" class="" id="exampleFormControlTextarea1" ></textarea>
+                     <div class="accordion_btn">
+                        <button style="background-color: #4fff11;color: #160F0F;">Booked</button>
+                        <button class="btn btn-dark">Broker Info</button>
+                        <button class="btn btn-danger">Remove</button>
+                     </div>
+                    </div>
+                  </div>
+               </div>
+              </div>
+              <div class="col">
+                <div class="d-flex accordion_body_title">
+                 <div><h1>c1</h1></div>
+                 <div>
+                   <img src="../assets/title-dividar.png" alt="" srcset="">
+                 <div class="d-flex">
+                   <div class="me-4">
+                     <h2>Phoenix, AZ,85001</h2>
+                     <p>(Phoenix-Mesa-Glendale)</p>
+                     <button>Origin</button>
+                   </div>
+                   <div>
+                     <h2>Phoenix, AZ,85001</h2>
+                     <p>(Phoenix-Mesa-Glendale)</p>
+                     <button>Origin</button>
+                   </div>
+                 </div>
+                 </div>
+                </div>
+                <!-- ------content---- -->
+                <div class="accordion_body_content d-flex justify-content-between align-items-end">
+                 <div><img src="../assets/audi-r8 1.png" alt=""></div>
+                 <dv>
+                   <h2>Audi R8 2018</h2>
+                   <h3>$700 Certified Funds</h3>
+                   <h4>382mi @ $1.83/mi</h4>
+                   <div class="d-flex">
+                     <img src="../assets/accordion-1.png" alt="" srcset="">
+                     <p>Weight</p>
+                   </div>
+                   <h5>3856 lbs</h5>
+                 </dv>
+                 <div>
+                   <div class="d-flex">
+                     <img src="../assets/accordion-2.png" alt="" srcset="">
+                     <p>Dimensions</p>
+                   </div>
+                   <h5>185” L x 80” W x 49” H</h5>
+                 </div>
+                </div>
+                <!-- ------------bottom---------------- -->
+                <div class="accordion_body_bottom">
+                   <div class="row">
+                     <div class="col">
+                       <p>Company</p>
+                       <a href="#">Xpress Auto Transport Inc</a>
+                       <div class="d-flex my-2 align-items-center">
+                         <i class="fas fa-star black_start"></i>
+                         <p>0% (0)</p>
+                         <div style="width:2.5px;height: 10px; background-color: #57565696;margin: 0 8px;"> </div>
+                         <p>4.7/5</p>
+                         <i class="fas fa-star gold-star"></i>
+                         <p>(234)</p>
+                       </div>
+                       <h6>M-S 9-7 Sun 9-3 EST</h6>
+                     </div>
+                     <div class="col">
+                      <div class="d-flex justify-content-between">
+                       <di>
+                         <p>Order ID</p>
+                       <h6>30439364-xt</h6>
+                       </di>
+                       <div class="d-flex">
+                         <i class="fas fa-phone-alt"></i>
+                         <p style="color: #0C6EFE; font-size: 12px;">929-566-5040</p>
+                       </div>
+                      </div>
+                      <textarea placeholder="Additional Info" class="" id="exampleFormControlTextarea1" ></textarea>
+                      <div class="accordion_btn">
+                         <button style="background-color: #4fff11;color: #160F0F;">Booked</button>
+                         <button class="btn btn-dark">Broker Info</button>
+                         <button class="btn btn-danger">Remove</button>
+                      </div>
+                     </div>
+                   </div>
+                </div>
+               </div>
+               <div class="col">
+                <div class="d-flex accordion_body_title">
+                 <div><h1>c1</h1></div>
+                 <div>
+                   <img src="../assets/title-dividar.png" alt="" srcset="">
+                 <div class="d-flex">
+                   <div class="me-4">
+                     <h2>Phoenix, AZ,85001</h2>
+                     <p>(Phoenix-Mesa-Glendale)</p>
+                     <button>Origin</button>
+                   </div>
+                   <div>
+                     <h2>Phoenix, AZ,85001</h2>
+                     <p>(Phoenix-Mesa-Glendale)</p>
+                     <button>Origin</button>
+                   </div>
+                 </div>
+                 </div>
+                </div>
+                <!-- ------content---- -->
+                <div class="accordion_body_content d-flex justify-content-between align-items-end">
+                 <div><img src="../assets/audi-r8 1.png" alt=""></div>
+                 <dv>
+                   <h2>Audi R8 2018</h2>
+                   <h3>$700 Certified Funds</h3>
+                   <h4>382mi @ $1.83/mi</h4>
+                   <div class="d-flex">
+                     <img src="../assets/accordion-1.png" alt="" srcset="">
+                     <p>Weight</p>
+                   </div>
+                   <h5>3856 lbs</h5>
+                 </dv>
+                 <div>
+                   <div class="d-flex">
+                     <img src="../assets/accordion-2.png" alt="" srcset="">
+                     <p>Dimensions</p>
+                   </div>
+                   <h5>185” L x 80” W x 49” H</h5>
+                 </div>
+                </div>
+                <!-- ------------bottom---------------- -->
+                <div class="accordion_body_bottom">
+                   <div class="row">
+                     <div class="col">
+                       <p>Company</p>
+                       <a href="#">Xpress Auto Transport Inc</a>
+                       <div class="d-flex my-2 align-items-center">
+                         <i class="fas fa-star black_start"></i>
+                         <p>0% (0)</p>
+                         <div style="width:2.5px;height: 10px; background-color: #57565696;margin: 0 8px;"> </div>
+                         <p>4.7/5</p>
+                         <i class="fas fa-star gold-star"></i>
+                         <p>(234)</p>
+                       </div>
+                       <h6>M-S 9-7 Sun 9-3 EST</h6>
+                     </div>
+                     <div class="col">
+                      <div class="d-flex justify-content-between">
+                       <di>
+                         <p>Order ID</p>
+                       <h6>30439364-xt</h6>
+                       </di>
+                       <div class="d-flex">
+                         <i class="fas fa-phone-alt"></i>
+                         <p style="color: #0C6EFE; font-size: 12px;">929-566-5040</p>
+                       </div>
+                      </div>
+                      <textarea placeholder="Additional Info" class="" id="exampleFormControlTextarea1" ></textarea>
+                      <div class="accordion_btn">
+                         <button style="background-color: #4fff11;color: #160F0F;">Booked</button>
+                         <button class="btn btn-dark">Broker Info</button>
+                         <button class="btn btn-danger">Remove</button>
+                      </div>
+                     </div>
+                   </div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
     </div>
+    </div>
+
+  
+  
 
     <script src="../script/index.js"></script>
     <script
@@ -164,5 +619,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+ 
   </body>
 </html>
