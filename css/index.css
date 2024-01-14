@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.primary_color{
+    background-color:#F0F0F0;
+}
+
+/* ******************Navigation*********** */
+.search-container {
+    position: relative;
+    width: 200px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.notification_area{
+    margin: 0px 10px;
+}
+.profile{
+    font-size: 30px;
+}
