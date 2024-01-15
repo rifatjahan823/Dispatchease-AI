@@ -13,6 +13,14 @@
       }
 
 }
+@media screen and (max-width:1100px) {
+    .accordion_body_content{
+        padding: 0;
+    }
+.accordion_body_title img{
+    width:200px
+}
+}
 @media screen and (min-width:767px) and (max-width:1200px) {
     .navigation_color{
         padding: 10px;
@@ -32,6 +40,16 @@
     .mobile_view{
         display: flex;
     }
+}
+@media screen and (min-width:992)and (max-width:1024px){
+    .accordion_body_content{
+        display: block;
+    }
+    .accordion_body_content img:last-child{
+       margin: auto;
+       display: block;
+    }
+
 }
 @media screen and (max-width:992px){
     .overview_section{

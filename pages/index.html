@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- <navigation -->
-    <nav class="navbar navbar-expand-xl bg-white sticky-top">
+    <nav class="navbar navbar-expand-xl  sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Dispatchease-AI</a>
         <button
@@ -63,26 +63,27 @@
           <div
             class="d-flex align-items-center navigation_color notification_area"
           >
-            <div class="search-container">
+            <!-- <div class="search-container"> -->
               <!-- Search Icon -->
-              <div class="search-icon" onclick="toggleSearch()">
+              <!-- <div class="search-icon" onclick="toggleSearch()">
                 <i class="fas fa-search"></i>
-              </div>
+              </div> -->
               <!-- Search Bar -->
-              <input
+              <!-- <input
                 type="text"
                 class="search-bar"
                 placeholder="Search..."
                 id="searchBar"
-              />
-            </div>
+              /> -->
+            <!-- </div> -->
+            <i class="fas fa-search"></i>
             <i class="far fa-comment-dots px-3"></i>
             <i class="fas fa-cog"></i>
             <i class="far fa-lightbulb px-3"></i>
             <i class="fas fa-bell"></i>
           </div>
           <!-- ******************Profile************** -->
-          <div class="d-flex align-items-center">
+          <div class="d-flex align-items-center profile_area">
             <i class="fas fa-user-circle profile"></i>
             <p class="m-0 ms-1">Demo@gmail.com</p>
           </div>
@@ -130,8 +131,8 @@
                 <!-- ----location-mile--- -->
                <div>
                 <div class="d-flex ">
-                  <p class="m-0 p-0" >0 mile</p>
-                  <p class="p-0"style="margin-left: 20%;">500 mile</p>
+                  <p class="m-0 p-0" style="color:gray;">0 mile</p>
+                  <p class="p-0"style="margin-left: 20%;color:gray;">500 mile</p>
               </div>
                 <div class="d-flex align-items-center">
                   <div
@@ -182,14 +183,14 @@
                 <div class="vechile_form">
                   <label for="">Vehicles</label>
                   <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
+                    <option selected>All (Default)</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
                   <label for="">Trailers</label>
                   <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
+                    <option selected>All (Default)</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
@@ -216,8 +217,8 @@
                 <!-- location-mile- -->
                 <div>
                   <div class="d-flex ">
-                    <p class="m-0 p-0" >0 mile</p>
-                    <p class="p-0"style="margin-left: 20%;">500 mile</p>
+                    <p class="m-0 p-0" style="color:gray;">0 mile</p>
+                    <p class="p-0"style="margin-left: 20%;color:gray">500 mile</p>
                 </div>
                   <div class="d-flex align-items-center">
                     <div
@@ -244,28 +245,28 @@
                   </div>
                  </div>
                  <p class="my-3">Listings</p>
-                 <p >Posted within</p>
-                 <button type="button" class="btn btn-dark rounded-4 ">All (Default)</button>
-                 <button type="button" class="btn btn-secondary rounded-4 mx-2">Option 1</button>
-                 <button type="button" class="btn btn-secondary rounded-4">Option 2</button>
+                 <p style="color:gray;">Posted within</p>
+                 <button type="button" class="btn btn-dark text-white rounded-4 ">All (Default)</button>
+                 <button type="button"style="background-color: #e6e7e9;"  class="btn btn-secondary rounded-4 mx-2">Option 1</button>
+                 <button type="button" style="background-color: #e6e7e9;" class="btn btn-secondary rounded-4">Option 2</button>
                  <div class="vechile_form">
                   <label for="">Vehicle Status</label>
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
+                  <select class="form-select" aria-label="Default select example" p>
+                    <option selected>All (Default)</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
                   <label for="">Min % of Vehicles</label>
                   <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
+                    <option selected disabled class="select_placeholder">1</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
                   <label for="">Min % of Vehicles</label>
                   <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
+                    <option selected>1</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
@@ -282,7 +283,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <h2>Pricing</h2>
                   <div class="d-flex align-items-center">
-                    <p class="me-2">Normal Filters</p>
+                    <p class="me-2" style="color:#0C6EFE;">Normal Filters</p>
                     <i class="fas fa-chevron-left"></i>
                   </div>
                 </div>
@@ -317,11 +318,10 @@
                       checked
                     /> <label class="form-check-label" for="flexSwitchCheckChecked"> CDL</div>
     
-                      <label class="form-check-label me-2" for="flexSwitchCheckChecked">Non CDL</label>
                       <div class="form-check form-switch">
                         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-            
                       </div>
+                      <label class="form-check-label me-2" for="flexSwitchCheckChecked">Non CDL</label>
                 </div>
               </div>
               <!-- -------------price-right--------------- -->
@@ -338,17 +338,17 @@
                   <option value="2">Two</option>
                   <option value="3">Three</option>
                 </select>
-                <h2>New Listings</h2>
+                <h2 class="mt-5">New Listings</h2>
                 <p>Tag listings posted within (hrs)</p>
                 <!-- --------pagination------------- -->
                 <nav aria-label="..." class="mt-3">
                   <ul class="pagination">
                     <li class="page-item">
-                      <span class="page-link">+</span>
+                      <span class="page-link" style="background: black;border-radius: 20px 0px 0px 20px;color: white; ">+</span>
                     </li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a style="color: black;background-color: #F2F2F2;" class="page-link" href="#">3</a></li>
                     <li class="page-item">
-                      <a class="page-link" href="#">-</a>
+                      <span class="page-link" style="background: black;border-radius: 0px 20px 20px 0px;color: white; ">-</span>
                     </li>
                   </ul>
                 </nav>
@@ -374,7 +374,7 @@
               <div class="overview_content">
                 <div class="d-flex align-items-center">
                   <img src="../assets/data-info-1.png" alt="" srcset="">
-                  <h6>Total Load in 
+                  <h6>Total Load in <br>
                     Database</h6>
                 </div>
                 <h1>7772</h1>
@@ -383,16 +383,16 @@
               <div class="overview_content">
                 <div class="d-flex align-items-center">
                   <img src="../assets/data-info-2.png" alt="" srcset="">
-                  <h6>Load For Pickup
+                  <h6>Load For Pickup <br>
                     at Origin</h6>
                 </div>
                 <h1>273</h1>
                 <p>Today, 11:25 AM</p>
               </div>
-              <div class="overview_content">
+              <div class="overview_content" style="border-right: 1px solid rgba(128, 128, 128, 0.533);;">
                 <div class="d-flex align-items-center">
-                  <img src="../assets/data-info-3.png" alt="" srcset="">
-                  <h6>Loads for Delivery 
+                  <img src="../assets/data-info-2.png" alt="" srcset="">
+                  <h6>Loads for Delivery <br> 
                     at Destination</h6>
                 </div>
                 <h1>48</h1>
@@ -403,29 +403,27 @@
             <div class="green_bg">
               <div class="overview_content">
                 <div class="d-flex align-items-center">
-                  <img src="../assets/data-info-1.png" alt="" srcset="">
-                  <h6>Total Load in 
-                    Database</h6>
-                </div>
-                <h1>7772</h1>
-                <p>Today, 11:25 AM</p>
-              </div>
-              <div class="overview_content">
-                <div class="d-flex align-items-center">
-                  <img src="../assets/data-info-2.png" alt="" srcset="">
-                  <h6>Load For Pickup
-                    at Origin</h6>
-                </div>
-                <h1>273</h1>
-                <p>Today, 11:25 AM</p>
-              </div>
-              <div class="overview_content">
-                <div class="d-flex align-items-center">
                   <img src="../assets/data-info-3.png" alt="" srcset="">
-                  <h6>Loads for Delivery 
-                    at Destination</h6>
+                  <h6>View ratio</h6>
                 </div>
-                <h1>48</h1>
+                <h1>3.75%</h1>
+              </div>
+              <div class="overview_content">
+                <div class="d-flex align-items-center">
+                  <img src="../assets/data-info-4.png" alt="" srcset="">
+                  <h6>Average Price <br>
+                    per Mile</h6>
+                </div>
+                <h1>$1.78</h1>
+                <p>Min: 0 - 0</p>
+              </div>
+              <div class="overview_content">
+                <div class="d-flex align-items-center">
+                  <img src="../assets/data-info-5.png" alt="" srcset="">
+                  <h6>Anchor Load</h6>
+                </div>
+                <h1>3</h1>
+                <p>Vehicle Details</p>
                
               </div>
             </div>
@@ -453,9 +451,9 @@
 <!-- *****************tabs***************** -->
 <ul class="tab_section">
   <a class="tab_active" href="http://">Origin</a>
-  <a href="http://">Origin</a>
-  <a href="http://">Origin</a>
-  <a href="http://">Origin</a>
+  <a href="http://">Destination</a>
+  <a href="http://">Origin to Destination</a>
+  <a href="http://">Loaded Trailer</a>
 </ul>
       <!-- ******************Content Section with Accordion**************** -->
       <div class="accordion mt-3" id="accordionExample">
@@ -504,9 +502,10 @@
           >
             <!-- --------------body----------------- -->
             <div class="accordion-body">
-              <div class="row gap-4">
-                <div class="col">
-                  <div class="d-flex accordion_body_title">
+              <div class="row gap-y-5 gap-x-1">
+                <!-- ---------------1-------------------- -->
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="accordion_body_title">
                     <div><h1>c1</h1></div>
                     <div>
                       <img src="../assets/title-dividar.png" alt="" srcset="" />
@@ -517,34 +516,37 @@
                           <button>Origin</button>
                         </div>
                         <div>
-                          <h2>Phoenix, AZ,85001</h2>
+                          <h2>Los Angeles, CA, 90001</h2>
                           <p>(Phoenix-Mesa-Glendale)</p>
-                          <button>Origin</button>
+                          <button style="background-color: #BFD9FF;">Destination</button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <!-- ------content---- -->
                   <div
-                    class="accordion_body_content d-flex justify-content-between align-items-end"
+                    class="accordion_body_content"
                   >
                     <div><img src="../assets/audi-r8 1.png" alt="" /></div>
-                    <dv>
-                      <h2>Audi R8 2018</h2>
-                      <h3>$700 Certified Funds</h3>
-                      <h4>382mi @ $1.83/mi</h4>
-                      <div class="d-flex">
-                        <img src="../assets/accordion-1.png" alt="" srcset="" />
-                        <p>Weight</p>
+                    <div class="d-flex align-items-end">
+                      <dv>
+                        <h2>Audi R8 2018</h2>
+                        <h3>$700 Certified Funds</h3>
+                        <h4>382mi @ $1.83/mi</h4>
+                        <div class="d-flex ">
+                          <img src="../assets/accordion-1.png" alt="" srcset="" />
+                          <p>Weight</p>
+                        </div>
+                        <h5>3856 lbs</h5>
+                      </dv>
+                      <div>
+                        <p class="text-danger mb-2">Enclosed Trailer Required</p>
+                        <div class="d-flex">
+                          <img src="../assets/accordion-2.png" alt="" srcset="" />
+                          <p>Dimensions</p>
+                        </div>
+                        <h5>185” L x 80” W x 49” H</h5>
                       </div>
-                      <h5>3856 lbs</h5>
-                    </dv>
-                    <div>
-                      <div class="d-flex">
-                        <img src="../assets/accordion-2.png" alt="" srcset="" />
-                        <p>Dimensions</p>
-                      </div>
-                      <h5>185” L x 80” W x 49” H</h5>
                     </div>
                   </div>
                   <!-- ------------bottom---------------- -->
@@ -601,8 +603,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="d-flex accordion_body_title">
+                <!-- -----------2------------- -->
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="accordion_body_title accordion_body_title_even">
                     <div><h1>c1</h1></div>
                     <div>
                       <img src="../assets/title-dividar.png" alt="" srcset="" />
@@ -613,34 +616,37 @@
                           <button>Origin</button>
                         </div>
                         <div>
-                          <h2>Phoenix, AZ,85001</h2>
+                          <h2>Los Angeles, CA, 90001</h2>
                           <p>(Phoenix-Mesa-Glendale)</p>
-                          <button>Origin</button>
+                          <button style="background-color: #BFD9FF;">Destination</button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <!-- ------content---- -->
                   <div
-                    class="accordion_body_content d-flex justify-content-between align-items-end"
+                    class="accordion_body_content"
                   >
                     <div><img src="../assets/audi-r8 1.png" alt="" /></div>
-                    <dv>
-                      <h2>Audi R8 2018</h2>
-                      <h3>$700 Certified Funds</h3>
-                      <h4>382mi @ $1.83/mi</h4>
-                      <div class="d-flex">
-                        <img src="../assets/accordion-1.png" alt="" srcset="" />
-                        <p>Weight</p>
+                    <div class="d-flex align-items-end">
+                      <dv>
+                        <h2>Audi R8 2018</h2>
+                        <h3>$700 Certified Funds</h3>
+                        <h4>382mi @ $1.83/mi</h4>
+                        <div class="d-flex ">
+                          <img src="../assets/accordion-1.png" alt="" srcset="" />
+                          <p>Weight</p>
+                        </div>
+                        <h5>3856 lbs</h5>
+                      </dv>
+                      <div>
+                        <p class="text-danger mb-2">Enclosed Trailer Required</p>
+                        <div class="d-flex">
+                          <img src="../assets/accordion-2.png" alt="" srcset="" />
+                          <p>Dimensions</p>
+                        </div>
+                        <h5>185” L x 80” W x 49” H</h5>
                       </div>
-                      <h5>3856 lbs</h5>
-                    </dv>
-                    <div>
-                      <div class="d-flex">
-                        <img src="../assets/accordion-2.png" alt="" srcset="" />
-                        <p>Dimensions</p>
-                      </div>
-                      <h5>185” L x 80” W x 49” H</h5>
                     </div>
                   </div>
                   <!-- ------------bottom---------------- -->
@@ -697,8 +703,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="d-flex accordion_body_title">
+                <!-- ----------------3----------------- -->
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="accordion_body_title">
                     <div><h1>c1</h1></div>
                     <div>
                       <img src="../assets/title-dividar.png" alt="" srcset="" />
@@ -709,34 +716,337 @@
                           <button>Origin</button>
                         </div>
                         <div>
-                          <h2>Phoenix, AZ,85001</h2>
+                          <h2>Los Angeles, CA, 90001</h2>
                           <p>(Phoenix-Mesa-Glendale)</p>
-                          <button>Origin</button>
+                          <button style="background-color: #BFD9FF;">Destination</button>
                         </div>
                       </div>
                     </div>
                   </div>
                   <!-- ------content---- -->
                   <div
-                    class="accordion_body_content d-flex justify-content-between align-items-end"
+                    class="accordion_body_content"
                   >
                     <div><img src="../assets/audi-r8 1.png" alt="" /></div>
-                    <dv>
-                      <h2>Audi R8 2018</h2>
-                      <h3>$700 Certified Funds</h3>
-                      <h4>382mi @ $1.83/mi</h4>
-                      <div class="d-flex">
-                        <img src="../assets/accordion-1.png" alt="" srcset="" />
-                        <p>Weight</p>
+                    <div class="d-flex align-items-end">
+                      <dv>
+                        <h2>Audi R8 2018</h2>
+                        <h3>$700 Certified Funds</h3>
+                        <h4>382mi @ $1.83/mi</h4>
+                        <div class="d-flex ">
+                          <img src="../assets/accordion-1.png" alt="" srcset="" />
+                          <p>Weight</p>
+                        </div>
+                        <h5>3856 lbs</h5>
+                      </dv>
+                      <div>
+                        <p class="text-danger mb-2">Enclosed Trailer Required</p>
+                        <div class="d-flex">
+                          <img src="../assets/accordion-2.png" alt="" srcset="" />
+                          <p>Dimensions</p>
+                        </div>
+                        <h5>185” L x 80” W x 49” H</h5>
                       </div>
-                      <h5>3856 lbs</h5>
-                    </dv>
+                    </div>
+                  </div>
+                  <!-- ------------bottom---------------- -->
+                  <div class="accordion_body_bottom">
+                    <div class="row">
+                      <div class="col">
+                        <p>Company</p>
+                        <a href="#">Xpress Auto Transport Inc</a>
+                        <div class="d-flex my-2 align-items-center">
+                          <i class="fas fa-star black_start"></i>
+                          <p>0% (0)</p>
+                          <div
+                            style="
+                              width: 2.5px;
+                              height: 10px;
+                              background-color: #57565696;
+                              margin: 0 8px;
+                            "
+                          ></div>
+                          <p>4.7/5</p>
+                          <i class="fas fa-star gold-star"></i>
+                          <p>(234)</p>
+                        </div>
+                        <h6>M-S 9-7 Sun 9-3 EST</h6>
+                      </div>
+                      <div class="col">
+                        <div class="d-flex justify-content-between">
+                          <di>
+                            <p>Order ID</p>
+                            <h6>30439364-xt</h6>
+                          </di>
+                          <div class="d-flex">
+                            <i class="fas fa-phone-alt"></i>
+                            <p style="color: #0c6efe; font-size: 12px">
+                              929-566-5040
+                            </p>
+                          </div>
+                        </div>
+                        <textarea
+                          placeholder="Additional Info"
+                          class=""
+                          id="exampleFormControlTextarea1"
+                        ></textarea>
+                        <div class="accordion_btn">
+                          <button
+                            style="background-color: #4fff11; color: #160f0f"
+                          >
+                            Booked
+                          </button>
+                          <button class="btn btn-dark">Broker Info</button>
+                          <button class="btn btn-danger">Remove</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- -----------------------4------------- -->
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="accordion_body_title accordion_body_title_even">
+                    <div><h1>c1</h1></div>
                     <div>
+                      <img src="../assets/title-dividar.png" alt="" srcset="" />
                       <div class="d-flex">
-                        <img src="../assets/accordion-2.png" alt="" srcset="" />
-                        <p>Dimensions</p>
+                        <div class="me-4">
+                          <h2>Phoenix, AZ,85001</h2>
+                          <p>(Phoenix-Mesa-Glendale)</p>
+                          <button>Origin</button>
+                        </div>
+                        <div>
+                          <h2>Los Angeles, CA, 90001</h2>
+                          <p>(Phoenix-Mesa-Glendale)</p>
+                          <button style="background-color: #BFD9FF;">Destination</button>
+                        </div>
                       </div>
-                      <h5>185” L x 80” W x 49” H</h5>
+                    </div>
+                  </div>
+                  <!-- ------content---- -->
+                  <div
+                    class="accordion_body_content"
+                  >
+                    <div><img src="../assets/audi-r8 1.png" alt="" /></div>
+                    <div class="d-flex align-items-end">
+                      <dv>
+                        <h2>Audi R8 2018</h2>
+                        <h3>$700 Certified Funds</h3>
+                        <h4>382mi @ $1.83/mi</h4>
+                        <div class="d-flex ">
+                          <img src="../assets/accordion-1.png" alt="" srcset="" />
+                          <p>Weight</p>
+                        </div>
+                        <h5>3856 lbs</h5>
+                      </dv>
+                      <div>
+                        <p class="text-danger mb-2">Enclosed Trailer Required</p>
+                        <div class="d-flex">
+                          <img src="../assets/accordion-2.png" alt="" srcset="" />
+                          <p>Dimensions</p>
+                        </div>
+                        <h5>185” L x 80” W x 49” H</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------------bottom---------------- -->
+                  <div class="accordion_body_bottom">
+                    <div class="row">
+                      <div class="col">
+                        <p>Company</p>
+                        <a href="#">Xpress Auto Transport Inc</a>
+                        <div class="d-flex my-2 align-items-center">
+                          <i class="fas fa-star black_start"></i>
+                          <p>0% (0)</p>
+                          <div
+                            style="
+                              width: 2.5px;
+                              height: 10px;
+                              background-color: #57565696;
+                              margin: 0 8px;
+                            "
+                          ></div>
+                          <p>4.7/5</p>
+                          <i class="fas fa-star gold-star"></i>
+                          <p>(234)</p>
+                        </div>
+                        <h6>M-S 9-7 Sun 9-3 EST</h6>
+                      </div>
+                      <div class="col">
+                        <div class="d-flex justify-content-between">
+                          <di>
+                            <p>Order ID</p>
+                            <h6>30439364-xt</h6>
+                          </di>
+                          <div class="d-flex">
+                            <i class="fas fa-phone-alt"></i>
+                            <p style="color: #0c6efe; font-size: 12px">
+                              929-566-5040
+                            </p>
+                          </div>
+                        </div>
+                        <textarea
+                          placeholder="Additional Info"
+                          class=""
+                          id="exampleFormControlTextarea1"
+                        ></textarea>
+                        <div class="accordion_btn">
+                          <button
+                            style="background-color: #4fff11; color: #160f0f"
+                          >
+                            Booked
+                          </button>
+                          <button class="btn btn-dark">Broker Info</button>
+                          <button class="btn btn-danger">Remove</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <!-- -----------5------------- -->
+                 <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="accordion_body_title">
+                    <div><h1>c1</h1></div>
+                    <div>
+                      <img src="../assets/title-dividar.png" alt="" srcset="" />
+                      <div class="d-flex">
+                        <div class="me-4">
+                          <h2>Phoenix, AZ,85001</h2>
+                          <p>(Phoenix-Mesa-Glendale)</p>
+                          <button>Origin</button>
+                        </div>
+                        <div>
+                          <h2>Los Angeles, CA, 90001</h2>
+                          <p>(Phoenix-Mesa-Glendale)</p>
+                          <button style="background-color: #BFD9FF;">Destination</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------content---- -->
+                  <div
+                    class="accordion_body_content"
+                  >
+                    <div><img src="../assets/audi-r8 1.png" alt="" /></div>
+                    <div class="d-flex align-items-end">
+                      <dv>
+                        <h2>Audi R8 2018</h2>
+                        <h3>$700 Certified Funds</h3>
+                        <h4>382mi @ $1.83/mi</h4>
+                        <div class="d-flex ">
+                          <img src="../assets/accordion-1.png" alt="" srcset="" />
+                          <p>Weight</p>
+                        </div>
+                        <h5>3856 lbs</h5>
+                      </dv>
+                      <div>
+                        <p class="text-danger mb-2">Enclosed Trailer Required</p>
+                        <div class="d-flex">
+                          <img src="../assets/accordion-2.png" alt="" srcset="" />
+                          <p>Dimensions</p>
+                        </div>
+                        <h5>185” L x 80” W x 49” H</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------------bottom---------------- -->
+                  <div class="accordion_body_bottom">
+                    <div class="row">
+                      <div class="col">
+                        <p>Company</p>
+                        <a href="#">Xpress Auto Transport Inc</a>
+                        <div class="d-flex my-2 align-items-center">
+                          <i class="fas fa-star black_start"></i>
+                          <p>0% (0)</p>
+                          <div
+                            style="
+                              width: 2.5px;
+                              height: 10px;
+                              background-color: #57565696;
+                              margin: 0 8px;
+                            "
+                          ></div>
+                          <p>4.7/5</p>
+                          <i class="fas fa-star gold-star"></i>
+                          <p>(234)</p>
+                        </div>
+                        <h6>M-S 9-7 Sun 9-3 EST</h6>
+                      </div>
+                      <div class="col">
+                        <div class="d-flex justify-content-between">
+                          <di>
+                            <p>Order ID</p>
+                            <h6>30439364-xt</h6>
+                          </di>
+                          <div class="d-flex">
+                            <i class="fas fa-phone-alt"></i>
+                            <p style="color: #0c6efe; font-size: 12px">
+                              929-566-5040
+                            </p>
+                          </div>
+                        </div>
+                        <textarea
+                          placeholder="Additional Info"
+                          class=""
+                          id="exampleFormControlTextarea1"
+                        ></textarea>
+                        <div class="accordion_btn">
+                          <button
+                            style="background-color: #4fff11; color: #160f0f"
+                          >
+                            Booked
+                          </button>
+                          <button class="btn btn-dark">Broker Info</button>
+                          <button class="btn btn-danger">Remove</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- -----------------------6------------- -->
+                <div class="col-lg-4 col-md-6 mb-5">
+                  <div class="accordion_body_title accordion_body_title_even">
+                    <div><h1>c1</h1></div>
+                    <div>
+                      <img src="../assets/title-dividar.png" alt="" srcset="" />
+                      <div class="d-flex">
+                        <div class="me-4">
+                          <h2>Phoenix, AZ,85001</h2>
+                          <p>(Phoenix-Mesa-Glendale)</p>
+                          <button>Origin</button>
+                        </div>
+                        <div>
+                          <h2>Los Angeles, CA, 90001</h2>
+                          <p>(Phoenix-Mesa-Glendale)</p>
+                          <button style="background-color: #BFD9FF;">Destination</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------content---- -->
+                  <div
+                    class="accordion_body_content"
+                  >
+                    <div><img src="../assets/audi-r8 1.png" alt="" /></div>
+                    <div class="d-flex align-items-end">
+                      <dv>
+                        <h2>Audi R8 2018</h2>
+                        <h3>$700 Certified Funds</h3>
+                        <h4>382mi @ $1.83/mi</h4>
+                        <div class="d-flex ">
+                          <img src="../assets/accordion-1.png" alt="" srcset="" />
+                          <p>Weight</p>
+                        </div>
+                        <h5>3856 lbs</h5>
+                      </dv>
+                      <div>
+                        <p class="text-danger mb-2">Enclosed Trailer Required</p>
+                        <div class="d-flex">
+                          <img src="../assets/accordion-2.png" alt="" srcset="" />
+                          <p>Dimensions</p>
+                        </div>
+                        <h5>185” L x 80” W x 49” H</h5>
+                      </div>
                     </div>
                   </div>
                   <!-- ------------bottom---------------- -->
@@ -799,7 +1109,7 @@
         </div>
       </div>
       <!-- ---------------two-------------- -->
-      <div class="accordion mt-5" id="accordionExample2">
+      <div class="accordion mt-3" id="accordionExample2">
         <div class="accordion-item">
           <h2
             class="accordion-header"
@@ -851,7 +1161,7 @@
         </div>
       </div>
       <!-- ---------------three-------------- -->
-      <div class="accordion mt-5" id="accordionExample3">
+      <div class="accordion mt-3" id="accordionExample3">
         <div class="accordion-item">
           <h2
             class="accordion-header"
